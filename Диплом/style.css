@@ -1,0 +1,964 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 1880px;
+    height: 4000px;
+    background-image: url(./img/bg.png);
+    background-color: black;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+}
+.no-underline-link {
+    text-decoration: none !important;
+}
+
+header, .body-2 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header ion-icon{
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    margin-left: 30px;
+    left: 200px;
+}
+header .logo{
+    position: relative;
+    width: 169px;
+    height: 30px;
+    top: 12px;
+}
+header .navigation {
+    position: absolute;
+    right: 20%;
+    padding-top: 20px;
+}
+
+.navigation ion-icon {
+    color: #fff;
+    top: 6px;
+    position: relative;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 80px; 
+    transition: .5s;    
+}
+
+
+
+.navigation a:hover {
+    color: rgba(251, 209, 62, 1);
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+    transform-origin: center;
+}
+
+.navigation a:hover:after {
+    transform-origin: center;
+    transform: scale(1);
+    background-color: rgba(251, 209, 62, 1);
+}
+.center{
+    color: #fff;
+}
+.center .textabDelivery{
+    position: relative;
+    width: 320px;
+    top: 172px;
+    left: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+.center .numPhone, .post{
+    position: relative;
+    width: 386px;
+    height: 30px;
+    top: 453px;
+    left: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+.center .post{
+    text-decoration: underline;
+    margin-top: 15px;
+    font-weight: 200;
+}
+.center .union{
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    top: 302px;
+    left: 7px;
+}
+.center .imgBig {
+    position: relative;
+    width: 1170px;
+    height: 680px;
+    top: 36px;
+    left: 390px;
+    z-index: 1;
+}
+.center .carttovar {
+    position: relative;
+    width: 355.24px;
+    height: 357.93px;
+    top: 187px;
+    left: 822px;
+    z-index: 2; 
+}
+.center .union2{
+    position: relative;
+    width: 364px;
+    height: 364px;
+    left: 1610px;
+    bottom: 80px;
+    z-index: 2;
+}
+.center .tiramisu{
+    position: relative;
+    width: 264px;
+    height: 262px;
+    left: 24px;
+    bottom: 280px;
+}
+.center .grams, h2, .tiramicuText{
+    width: 60px;
+    background-color: rgba(190, 190, 190, 0.5);
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    bottom: 270px;
+    left: 50px;
+}
+.center h2{
+    width: 100px;
+    height: 28px;
+    left: 45px;
+    bottom: 220px;
+    background: none;
+}
+.center .tiramicuText{
+    width: 104px;
+    height: 24px;
+    left: 50px;
+    bottom: 280px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: none;
+}
+.downCenter h1{
+    position: relative;
+    width: 843px;
+    height: 194px;
+    left: 555px;
+    bottom: 230px;
+    color: #fff;
+    background: none;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.cards{
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+}
+.cards-line1{
+    position: relative;
+    left: 2%;
+}
+.card1 .hachapury{
+    position: relative;
+    width: 233px;    
+    height: 233px;
+    bottom: 90px;
+    left: 80px;
+}
+.card1 .title{
+    width: 184px;
+    height: 24px;
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: none;
+    color: #fff;
+}
+.card1 .text1{
+    width: 60px;
+    background-color: rgba(190, 190, 190, 0.5);
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    left: 80px;
+    color: #fff;
+}
+.card1 .text2{
+    width: 233px;
+    height: 58px;
+    position: relative;
+    bottom: 30px;
+    left: 80px;
+    opacity: 0.8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.card1 h2{
+    width: 100px;
+    left: 60px;
+    bottom: 6px;
+    background: none;
+    color: #fff;
+}
+.card1 button, .center button, .button2{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    left: 190px;
+    bottom: 40px;
+    color: #000;
+    background-color:  rgba(251, 209, 62, 1);
+    border-radius: 5px;
+    border: transparent solid;
+    cursor: pointer;
+}
+.card1 ion-icon, .center ion-icon, .button2 ion-icon{
+    height: 40px;
+    width: 40px;
+}
+.center button, .button2{
+    bottom: 255px;
+}
+.button2{
+    left: 52.2%;
+    bottom: 675px;
+    z-index: 2;
+}
+.card2, .card3, .card4, .card5, .card6{
+    position: absolute;
+    left: 14%;
+    top: 0%;
+}
+.card2 .hachapury, .card3 .hachapury, .card4 .hachapury, .card5 .hachapury, .card6 .hachapury, .card1-line2 .hachapury, .card3-line2 .hachapury, .card2-line2 .hachapury, .card4-line2 .hachapury, .card5-line2 .hachapury, .card6-line2 .hachapury{
+    position: relative;
+    width: 233px;    
+    height: 233px;
+    bottom: 90px;
+    left: 80px;
+}
+.card2 .title, .card3 .title, .card4 .title, .card5 .title, .card6 .title, .card1-line2 .title, .card2-line2 .title, .card3-line2 .title, .card4-line2 .title, .card5-line2 .title, .card6-line2 .title{
+    width: 184px;
+    height: 24px;
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: none;
+    color: #fff;
+}
+.card2 .text1, .card3 .text1, .card4 .text1, .card5 .text1, .card6 .text1, .card1-line2 .text1, .card2-line2 .text1, .card3-line2 .text1, .card4-line2 .text1, .card5-line2 .text1, .card6-line2 .text1{
+    width: 60px;
+    background-color: rgba(190, 190, 190, 0.5);
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+    color: #fff;
+}
+.card2 .text2, .card3 .text2, .card4 .text2, .card5 .text2, .card6 .text2, .card1-line2 .text2, .card2-line2 .text2, .card3-line2 .text2, .card4-line2 .text2, .card5-line2 .text2, .card6-line2 .text2{
+    width: 233px;
+    height: 58px;
+    position: relative;
+    bottom: 10px;
+    left: 80px;
+    opacity: 0.8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.card2 .sales, .card3 .sales, .card4 .sales, .card6 .sales, .card1-line2 .sales, .card5-line2 .sales, .card6-line2 .sales{
+    width: 100px;
+    left: 60px;
+    bottom: 6px;
+    background: none;
+    color: rgb(176, 176, 176);
+    text-decoration: line-through;
+}
+.card2 h2, .card3 h2, .card4 h2, .card5 h2, .card6 h2, .card1-line2 h2, .card2-line2 h2, .card3-line2 h2, .card4-line2 h2, .card5-line2 h2, .card6-line2 h2{
+    width: 100px;
+    left: 60px;
+    bottom: 6px;
+    background: none;
+    color: #fff;
+}
+.card2 button, .card3 button, .card4 button, .card5 button, .card6 button, .card1-line2 button, .card2-line2 button, .card3-line2 button, .card4-line2 button, .card5-line2 button, .card6-line2 button{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    left: 190px;
+    bottom: 60px;
+    color: #000;
+    background-color:  rgba(251, 209, 62, 1);
+    border-radius: 5px;
+    border: transparent solid;
+    cursor: pointer;
+}
+.card2 ion-icon, .card3 ion-icon, .card4 ion-icon, .card5  ion-icon, .card6 ion-icon, .card1-line2 ion-icon, .card2-line2 ion-icon, .card3-line2 ion-icon, .card4-line2 ion-icon, .card5-line2 ion-icon, .card6-line2 ion-icon{
+    height: 40px;
+    width: 40px;
+}
+
+.card3{
+    left: 28%;
+}
+.card4{
+    left: 42%;
+}
+.card4 h2, .card4 .sales{
+    left: 30%;
+}
+.card4 button{
+    left: 90%;
+}
+
+.card5{
+    left: 56%;
+}
+.card5 button{
+    bottom: 40px;
+}
+.card6{
+    left: 70%;
+}
+.card6 .sales{
+    text-decoration: none;
+    color: #fff;
+}
+.card1-line2, .card2-line2, .card3-line2, .card4-line2, .card5-line2, .card6-line2{
+    position: absolute;
+    top: 130%;
+    left: 2.5%;
+}
+.card2-line2{
+    left: 17%;
+}
+.card2-line2 button{
+    bottom: 40px;
+}
+.card3-line2{
+    left: 31%;
+}
+.card3-line2 button{
+    bottom: 40px;
+}
+.card4-line2{
+    left: 45%;
+}
+.card5-line2{
+    left: 59%;
+}
+.card6-line2{
+    left: 73%;
+}
+.menu{
+    margin-bottom: 10px;
+}
+.menu .line{
+    position: relative;
+    left: 3%;
+    margin-top: 56%;
+}
+.menu h1{
+    width: 643px;
+    height: 90px;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 90px;
+    position: absolute;
+    color: #fff;
+    top: 290%; 
+    left: 40%;   
+}
+.arrows {
+    position: absolute;
+    left: 83%;
+    top: 293%;
+    color: gray;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.arrowLeft, .arrowRight {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 100px;
+    transition: color 0.3s;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.arrowRight:hover, .arrowLeft:hover {
+    color: rgb(232, 232, 232);
+    border-color: rgb(232, 232, 232);
+}
+.line{
+    position: absolute;
+    bottom: 300px;
+}
+.line a{
+    text-decoration: none;
+}
+.discount-block, .hotMeals-block, .soups-block, .hinkaly-block, .coldAppetizers-block, .salads-block{
+    width: 233px;
+    height: 314px;
+    position: absolute;
+    background-color: rgba(183, 0, 0, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 320%;
+    left: 5%;
+    border: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.discount-text {
+    color: #000;
+}
+
+.top-discount,
+.bottom-discount {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+}
+.discount-block, .hotMeals-block, .soups-block, .hinkaly-block, .coldAppetizers-block, .salads-block {
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.hotMeals-block:hover, .soups-block:hover, .hinkaly-block:hover, .coldAppetizers-block:hover, .salads-block:hover {
+    transform: translateZ(10px) scale(1.1);
+    z-index: 2;
+    background-color: rgb(40, 40, 82);
+}
+.discount-block:hover{
+    transform: translateZ(10px) scale(1.1);
+    z-index: 2;
+}
+.center-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+}
+.bottom-discount{
+    left: 40%;
+    top: 86%;
+}
+.top-discount{
+    position: absolute;
+    bottom: 86%;
+    left: 40%;
+}
+.hotMeals-block, .soups-block, .hinkaly-block, .coldAppetizers-block, .salads-block{
+    background-color: #252424;
+    left: 19%;
+}
+.topImg, .bottomImg, .bottomImg2, .topImg2, .topImg3, .bottomImg3, .bottomImg4, .topImg4, .bottomImg5, .topImg5{
+    position: relative;
+    bottom: 14px;
+}
+.bottomImg{
+    top: 15px;
+}
+.bottomImg2, .bottomImg3{
+    top: 25px;
+}
+.soups-block{
+    position: absolute;
+    left: 33%;
+    top: 320%;
+}
+.topImg2, .topImg3{
+    bottom: 23px;
+}
+.hinkaly-block{
+    left: 47%;
+}
+.topImg3{
+    bottom: 35px;
+}
+
+.bottomImg3, .bottomImg4{
+    top: 37px;
+}
+.coldAppetizers-block{
+    left: 61%;
+}
+.bottomImg4{
+    top: 22px;
+    width: 170px;
+    height: 90px;
+}
+.topImg4{
+    top: -18px;
+    width: 170px;
+    height: 90px;
+}
+.salads-block{
+    left: 75%;
+}
+.topImg5{
+    bottom: 32px;
+}
+.bottomImg5{
+    top: 32px;
+}
+
+.footer, .footer-2, .footer-3, .footer-4{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    margin-top: 15%;
+}
+.footer-top img{
+    width: 205px;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 4%;
+}
+.navigation2{
+    position: relative;
+    margin-left: 20%;
+    bottom: 17px;
+}
+.navigation2 a{
+    justify-content: space-between;
+    margin-right: 50px;
+    color: #fff;
+}
+.navigation2 h2, .navigation2 .p-2{
+    width: 300px;
+    position: absolute;
+    margin-left: 60%;
+    bottom: 20%;
+    color: #fff;
+    background: none;
+    font-weight: 300;
+}
+.navigation2 .p-2{
+    margin-left: 83%;
+    background: none;
+    text-decoration: underline;
+}
+.horizontal-line {
+    width: 1700px;
+    height: 1px;  
+    margin-left: 4%;
+    margin-top: 4%;
+    background-color: rgb(150, 148, 148); 
+}
+.footer-bottom .p-1{
+    height: 10px;
+    color: #fff;
+    position: absolute;
+    top: 66%;
+}
+.footer-bottom .p2-1{
+    width: 800px;
+    background: none;
+    color: #fff;
+    margin-top: 3.3%;
+    margin-left: 60%;
+    margin-right: 200px;
+    text-decoration: underline;
+}
+.footer-bottom .p2-2{
+    width: 600px;
+    position: absolute;
+    background: none;
+    color: #fff;
+    margin-left: 82%;
+    bottom: 28.3%;
+    text-decoration: underline;
+}
+.footer-bottom .p-1{
+    position: absolute;
+    bottom: 45%;
+    left: 70px;
+}
+
+/*Горячие*/
+
+.body-2{
+    height: 1500px;
+}
+.body-2 .navigation a{
+    margin-right: 50px;
+}
+.footer-2, .footer-3, .footer-4{
+    top: 90%;
+}
+.center-hot h1, .center-hot-footer h1{
+    width: 643px;
+    height: 94px;
+    position: absolute;
+    top: 164px;
+    left: 63px;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    background: none;
+}
+.center-hot a, .center-hot-footer a{
+    position: relative;
+    height: 20px;
+    width: 30px;
+    top: 270px;
+    left: 70px;
+    justify-content: space-between;
+    margin-right: 1px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.center-hot .goriach, .center-hot-footer .goriach{
+    color: rgb(148, 148, 148);
+}
+
+.cards-page2{
+    position: relative;
+    left: 5%;
+    top: 30%;
+}
+
+.card1-page2, .card2-page2, .card3-page2, .card4-page2, .card5-page2, .card6-page2{
+    position: absolute;
+    top: 50%;
+}
+.card1-page2 .kotleta, .card2-page2 .kotleta, .card3-page2 .kotleta, .card4-page2 .kotleta, .card5-page2 .kotleta, .card6-page2 .kotleta{
+    position: relative;
+    width: 233px;    
+    height: 233px;
+    bottom: 90px;
+    left: 80px;
+}
+.card1-page2 .title-page2, .card2-page2 .title-page2, .card3-page2 .title-page2, .card4-page2 .title-page2, .card5-page2 .title-page2, .card6-page2 .title-page2{
+    width: 264px;
+    height: 24px;
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: none;
+    color: #fff;
+}
+.card1-page2 .text1-page2, .card2-page2 .text1-page2, .card3-page2 .text1-page2, .card4-page2 .text1-page2, .card5-page2 .text1-page2, .card6-page2 .text1-page2{
+    width: 60px;
+    background-color: rgba(190, 190, 190, 0.5);
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+    color: #fff;
+}
+.card1-page2 .text2-page2,.card2-page2 .text2-page2, .card3-page2 .text2-page2, .card4-page2 .text2-page2, .card5-page2 .text2-page2, .card6-page2 .text2-page2{
+    width: 233px;
+    height: 58px;
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+    opacity: 0.8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.card1-page2 h2, .card2-page2 h2, .card3-page2 h2, .card4-page2 h2, .card5-page2 h2, .card6-page2 h2{
+    width: 100px;
+    left: 70px;
+    bottom: 6px;
+    background: none;
+    color: #fff;
+}
+.card1-page2 .sales, .card2-page2 .sales, .card3-page2 .sales{
+    color: #fff;
+    left: 70px;
+}
+.card1-page2 button, .card2-page2 button, .card3-page2 button, .card4-page2 button, .card5-page2 button, .card6-page2 button{
+    position: relative;
+    width: 100px;
+    height: 45px;
+    left: 190px;
+    bottom: 60px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(251, 209, 62, 1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card1-page2 a{
+    width: 93px;
+    height: 20px;
+    color: rgba(251, 209, 62, 1);
+    text-decoration: none;
+    background: none;
+    transition: 0.2s;
+}
+.card1-page2 button:hover {
+    background-color: rgba(251, 209, 62, 1);
+}
+.card1-page2 a:hover{
+    color: #252424;
+    background: none;
+}
+.card2-page2 ion-icon, .card4-page2 ion-icon, .card5-page2 ion-icon, .card6-page2 ion-icon{
+    height: 40px;
+    width: 40px;
+}
+.card2-page2{
+    left: 14%;
+}
+.card2-page2 .title-page2{
+    width: 150px;
+}
+.card2-page2 button{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    left: 190px;
+    color: #000;
+    background-color:  rgba(251, 209, 62, 1);
+    border-radius: 5px;
+    border: transparent solid;
+    cursor: pointer;
+    bottom: 40px;
+}
+.card3-page2{
+    left: 28%;
+}
+.card3-page2 a{
+    width: 93px;
+    height: 20px;
+    text-decoration: none;
+    color: rgba(251, 209, 62, 1);
+}
+.card3-page2 .text1-page2{
+    bottom: 60px;
+}
+.card3-page2 .text2-page2{
+    bottom: 40px;
+}
+.card3-page2 button:hover {
+    background-color: rgba(251, 209, 62, 1);
+}
+.card3-page2 a:hover{
+    color: #252424;
+    background: none;
+}
+.card4-page2{
+    left: 42%;
+}
+.card4-page2 .text1-page2, .card5-page2 .text1-page2, .card6-page2 .text1-page2{
+    bottom: 60px;
+}
+.card4-page2 .text2-page2, .card5-page2 .text2-page2, .card6-page2 .text2-page2{
+    bottom: 40px;
+}
+.card4-page2 button, .card5-page2 button, .card5-page2 button, .card6-page2 button{
+    width: 45px;
+    height: 45px;
+    bottom: 40px;
+    background-color: rgba(251, 209, 62, 1);
+}
+.card5-page2{
+    left: 56%;
+}
+.card6-page2{
+    left: 70%;
+}
+.card6-page2 .text1-page2{
+    bottom: 50px;
+}
+
+/*hincaly-page*/
+
+.hincaly-body{
+    height: 100%;
+}
+.center-hot-footer .hot{
+    width: 820px;
+}
+.center-hincaly .big-hencaly{
+    width: 738px;
+    height: 535px;
+    position: absolute;
+    top: 351.21px;
+    left: 20px;
+}
+.union-hincaly{
+    position: relative;
+    top: 313px;
+    left: 8px;
+}
+.center-hincaly h3{
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    left: 45%;
+    top: 33%;
+    color: rgb(148, 148, 148);
+    background: none;
+}
+
+/*DISCOUNT*/
+
+.cards-dis .card2, .cards-dis .card3, .cards-dis .card4{
+    position: absolute;
+    top: 35%;
+}
+.cards-dis .card2{
+    left: 50px;
+}
+.cards-dis .card3{
+    left: 17%;
+}
+.cards-dis .card4{
+    left: 31.5%;
+}
+.cards-dis .card1-line2, .cards-dis .card5-line2, .cards-dis .card6-line2{
+    position: absolute;
+    top: 35%;
+    left: 46%;
+}
+.cards-dis .card5-line2{
+    left: 60.5%;
+}
+.cards-dis .card6-line2{
+    left: 75%;
+}
+
+
+
+/* LOGIN PAGE*/
+
+
+.registration-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    margin-top: 15%;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-form h2 {
+    text-align: center;
+    position: relative;
+    color: #333;
+    background: none;
+    font-size: 20px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.body-3{
+    height: 800px;
+}
